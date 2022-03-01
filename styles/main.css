@@ -1,0 +1,44 @@
+/*---------------------
+    Custom Colors
+---------------------*/
+
+.bg-amour {
+  background-color: #ee5253;
+}
+
+.bg-imperial {
+  background-color: #222f3e;
+}
+
+/*-----------------------
+    Search Button Hover
+-----------------------*/
+#search-btn:hover {
+  background-color: #353b48;
+  color: #fff;
+}
+
+/*-----------------------
+    Media Queries
+-----------------------*/
+
+/* Smartphones (767px and down) */
+
+@media screen and (max-width: 767px) {
+  #search-field {
+    width: 100%;
+  }
+}
+
+/* Tablets (768px to 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  #search-field {
+    width: 75%;
+  }
+}
+/* Laptops (1024px and up) */
+@media only screen and (min-width: 1024px) {
+  #search-field {
+    width: 50%;
+  }
+}
