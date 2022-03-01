@@ -10,6 +10,21 @@
   background-color: #222f3e;
 }
 
+/*---------------------
+    Custom Fonts
+---------------------*/
+
+.font-calistoga {
+  font-family: "Calistoga", cursive;
+}
+
+.font-playball {
+  font-family: "Playball", cursive;
+}
+
+.font-amiri {
+  font-family: "Amiri", serif;
+}
 /*-----------------------
     Search Button Hover
 -----------------------*/
