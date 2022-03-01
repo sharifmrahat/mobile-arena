@@ -79,7 +79,8 @@
 
                             </div>
                             <div class="mb-4">
-                                <button class="btn bg-amour text-light fs-5 fw-bold">Details</button>
+                                <button class="btn bg-amour text-light fs-5 fw-bold" data-bs-toggle="modal"
+                                    data-bs-target="#cardModal">Details</button>
                             </div>
 
                         </div>
@@ -88,9 +89,46 @@
             </div>
         </section>
 
-        <!----------------Modal------------->
+        <!----------------Modal Section------------->
         <section>
+            <!-- The Modal -->
+            <div class="modal fade" id="cardModal">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content">
 
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <div class="card">
+                                <div class="row g-0">
+                                    <div class="col-md-4 ">
+                                        <img src="https://picsum.photos/seed/picsum/200/200"
+                                            class="img-fluid h-100 w-100 rounded-start" alt="">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h3 class="card-title text-amour fw-bold">Samsung S21</h3>
+                                            <p class="card-text fs-5"><b>Brand: </b>Samung</p>
+                                            <p class="card-text fs-5"><b>Release Date: </b>January 2022</p>
+                                            <p class="card-text fs-5"><b>Specification: </b>Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit. Illum, in?</p>
+                                            <p class="card-text fs-5"><b>Sensors: </b>Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.</p>
+                                            <p class="card-text fs-5"><b>Others: </b>Lorem ipsum dolor sit amet
+                                                consectetur, adipisicing elit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary fs-6 fw-bold"
+                                data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
 
