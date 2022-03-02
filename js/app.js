@@ -98,7 +98,7 @@ const showDetails = (phone) => {
                     <p><b>Release Date: </b>${phone?.releaseDate || "Release date is unknown"}</p>
                     <p><b>Specification: </b>Display: ${phone?.mainFeatures?.displaySize}, Memory: ${phone?.mainFeatures?.memory}, Storage: ${phone?.mainFeatures?.storage}, Chipset: ${phone?.mainFeatures?.chipSet}.</p>
                     <p><b>Sensors: </b>${phone.mainFeatures.sensors}</p>
-                    <p><b>Others: </b>WLAN: ${phone?.others?.WLAN || "WLAN info is unknown"}, Bluetooth: ${phone?.others?.Bluetooth || "Bluetooth version is unknown"}, GPS: ${phone?.others?.GPS || "GPS info is unknown"}, NFC: ${phone?.others?.NFC || "NFC info is unknown"}, USB: ${phone?.others?.USB || "USB types is unknown"}</p>
+                    <p><b>Other Features: </b>WLAN: ${phone?.others?.WLAN || "WLAN info is unknown"}, Bluetooth: ${phone?.others?.Bluetooth || "Bluetooth version is unknown"}, GPS: ${phone?.others?.GPS || "GPS info is unknown"}, NFC: ${phone?.others?.NFC || "NFC info is unknown"}, USB: ${phone?.others?.USB || "USB types is unknown"}</p>
                 </div>
             </div>`;
 };
