@@ -7,12 +7,12 @@ const searchText = document.getElementById("search-text");
 const searchResult = document.getElementById("search-result");
 const modalBody = document.getElementById("modal-body");
 
-//------------Spinner & Alert is hidden by default-----------\\
+//-------------Spinner & Alert is hidden by default-----------\\
 
 alertMsg.style.display = "none";
 spinner.setAttribute("hidden", true);
 
-//-----------Event Handler Onclick Search button----------------\\
+//------------Event Handler Onclick Search button----------------\\
 
 document.getElementById("search-btn").addEventListener("click", function () {
     const inputText = inputField.value;
@@ -24,7 +24,7 @@ document.getElementById("search-btn").addEventListener("click", function () {
     fetch(url)
         .then((res) => res.json())
         .then((data) => {
-            //------condition if searched item not found--------\\
+            //-------condition if searched item not found--------\\
             if (data.status === false) {
                 searchResult.innerHTML = "";
                 alertMsg.style.display = "block";
@@ -32,7 +32,7 @@ document.getElementById("search-btn").addEventListener("click", function () {
                 inputField.value = "";
                 spinner.setAttribute("hidden", true);
             }
-            //-------condition if item is found-----------\\
+            //--------condition if item is found-----------\\
             else {
                 inputField.value = "";
                 alertMsg.style.display = "none";
@@ -42,7 +42,7 @@ document.getElementById("search-btn").addEventListener("click", function () {
         });
 });
 
-//---------Function call after data load from API------------\\
+//-----------Function call after data load from API------------\\
 
 const getPhones = (items) => {
     searchResult.innerHTML = "";
@@ -53,7 +53,7 @@ const getPhones = (items) => {
         allItems = items;
     }
 
-    //-------Loop through each item---------\\
+    //---------Loop through each item---------\\
 
     allItems.forEach((phone) => {
         const div = document.createElement("div");
@@ -79,7 +79,7 @@ const getPhones = (items) => {
 const getDetails = (phoneId) => {
     const slugUrl = `https://openapi.programming-hero.com/api/phone/${phoneId}`;
 
-    //-----fetching data for individula slug----------\\
+    //-----fetching data for individula slug------\\
     fetch(slugUrl)
         .then((res) => res.json())
         .then((data) => showDetails(data.data));
