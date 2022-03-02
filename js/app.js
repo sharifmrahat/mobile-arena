@@ -26,7 +26,7 @@ document.getElementById("search-btn").addEventListener("click", function () {
             if (data.status === false) {
                 searchResult.innerHTML = "";
                 alertMsg.style.display = "block";
-                searchText.innerHTML = "${inputField.value}";
+                searchText.innerHTML = `"${inputField.value}"`;
                 inputField.value = "";
                 spinner.setAttribute("hidden", true);
             }
