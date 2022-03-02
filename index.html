@@ -37,7 +37,7 @@
             <h1 class="text-white mb-2 font-calistoga">Mobile Arena</h1>
             <h4 class="text-light mb-5 font-playball">The Best & Balanced!</h4>
             <div id="search-field" class="input-group mx-auto mb-3 shadow font-amiri">
-                <input type="text" class="form-control" placeholder="Write phone's name here"
+                <input id="input-field" type="text" class="form-control" placeholder="Write phone's name here"
                     aria-label="Recipient's username" aria-describedby="button-addon2">
                 <button id="search-btn" class="btn bg-imperial fs-5 text-light fw-bold px-2 px-md-4"
                     type="button">Search</button>
@@ -58,7 +58,7 @@
                 </div>
                 <h4 class="fw-bold">Searching...</h4>
             </div>
-            <div id="alertbar" class="mx-auto text-center mb-5">
+            <div id="alert" class="mx-auto text-center mb-5">
                 <span class="alert alert-warning fs-5" role="alert">
                     <strong>Sorry!</strong> Your phone <span id="search-text"></span> is not available.
                 </span>
@@ -67,9 +67,9 @@
 
         <!----------------Search Result------------->
         <section>
-            <div id="search-result">
+            
                 <!----------------Card Section------------->
-                <div class="row row-cols-1 row-cols-md-3 row-cols-md-4 g-4 justify-content-center mb-5">
+                <div id="search-result" class="row row-cols-1 row-cols-md-3 row-cols-md-4 g-4 justify-content-center mb-5">
                     <div class="col">
                         <div class="card h-100 text-center shadow">
                             <img src="https://picsum.photos/seed/picsum/200/200" class="card-img-top" alt="...">
@@ -86,7 +86,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+           
         </section>
 
         <!----------------Modal Section------------->
@@ -99,14 +99,14 @@
                         <!-- Modal body -->
                         <div class="modal-body">
                             <div class="card">
-                                <div class="row g-0">
+                                <div id="modal-body" class="row g-0">
                                     <div class="col-md-4 ">
                                         <img src="https://picsum.photos/seed/picsum/200/200"
-                                            class="img-fluid h-100 w-100 rounded-start" alt="">
+                                            class="img-fluid h-100 w-100 " alt="">
                                     </div>
                                     <div class="col-md-8">
                                         <div class="card-body">
-                                            <h3 class="card-title text-amour fw-bold">Samsung S21</h3>
+                                            <!-- <h3 class="card-title text-amour fw-bold">Samsung S21</h3>
                                             <p class="card-text fs-5"><b>Brand: </b>Samung</p>
                                             <p class="card-text fs-5"><b>Release Date: </b>January 2022</p>
                                             <p class="card-text fs-5"><b>Specification: </b>Lorem ipsum dolor sit amet
@@ -114,7 +114,7 @@
                                             <p class="card-text fs-5"><b>Sensors: </b>Lorem ipsum dolor sit amet
                                                 consectetur, adipisicing elit.</p>
                                             <p class="card-text fs-5"><b>Others: </b>Lorem ipsum dolor sit amet
-                                                consectetur, adipisicing elit.</p>
+                                                consectetur, adipisicing elit.</p> -->
                                         </div>
                                     </div>
                                 </div>
