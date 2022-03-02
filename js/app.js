@@ -1,4 +1,4 @@
-//------------------Getting element by ID----------------\\
+//------------------Getting HTML element by ID----------------\\
 
 const inputField = document.getElementById("input-field");
 const alertMsg = document.getElementById("alert");
@@ -8,19 +8,17 @@ const searchResult = document.getElementById("search-result");
 const modalBody = document.getElementById("modal-body");
 
 //-------------Spinner & Alert is hidden by default-----------\\
-
 alertMsg.style.display = "none";
 spinner.setAttribute("hidden", true);
 
 //------------Event Handler Onclick Search button----------------\\
-
 document.getElementById("search-btn").addEventListener("click", function () {
     const inputText = inputField.value;
     const url = `https://openapi.programming-hero.com/api/phones?search=${inputText}`;
     spinner.removeAttribute("hidden", true);
     alertMsg.style.display = "none";
 
-    //---------Fetching API Data-----------\\
+    //---------Fetching Data from API-----------\\
     fetch(url)
         .then((res) => res.json())
         .then((data) => {
@@ -28,7 +26,7 @@ document.getElementById("search-btn").addEventListener("click", function () {
             if (data.status === false) {
                 searchResult.innerHTML = "";
                 alertMsg.style.display = "block";
-                searchText.innerHTML = `"${inputField.value}"`;
+                searchText.innerHTML = "${inputField.value}";
                 inputField.value = "";
                 spinner.setAttribute("hidden", true);
             }
@@ -43,7 +41,6 @@ document.getElementById("search-btn").addEventListener("click", function () {
 });
 
 //-----------Function call after data load from API------------\\
-
 const getPhones = (items) => {
     searchResult.innerHTML = "";
     let allItems;
@@ -54,7 +51,6 @@ const getPhones = (items) => {
     }
 
     //---------Loop through each item---------\\
-
     allItems.forEach((phone) => {
         const div = document.createElement("div");
         div.classList.add("col");
@@ -85,6 +81,7 @@ const getDetails = (phoneId) => {
         .then((data) => showDetails(data.data));
 };
 
+//---------Showing phone details in modal---------\\
 const showDetails = (phone) => {
     modalBody.innerHTML = `
             <div class="col-md-4 ">
