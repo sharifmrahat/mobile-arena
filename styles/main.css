@@ -43,9 +43,9 @@
 
 /*-----------------------
     Media Queries
------------------------*/
+------------------------*/
 
-/* Smartphones (767px and down) */
+/*-------Smartphones (767px and down)----*/
 
 @media screen and (max-width: 767px) {
   #search-field {
@@ -53,13 +53,13 @@
   }
 }
 
-/* Tablets (768px to 1023px) */
+/*-------Tablets (768px to 1023px)--------*/
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   #search-field {
     width: 75%;
   }
 }
-/* Laptops (1024px and up) */
+/*-------Laptops (1024px and up)---------*/
 @media only screen and (min-width: 1024px) {
   #search-field {
     width: 50%;
