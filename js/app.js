@@ -103,7 +103,7 @@ const showDetails = (phone) => {
                     <p><b>Release Date: </b>${phone.releaseDate || "Release date is unknown"}</p>
                     <p><b>Specification: </b>Display: ${phone.mainFeatures.displaySize}, Memory: ${phone.mainFeatures.memory}, Storage: ${phone.mainFeatures.storage}, Chipset: ${phone.mainFeatures.chipSet}.</p>
                     <p><b>Sensors: </b>${phone.mainFeatures.sensors}</p>
-                    <p><b>Others: </b>${phone.others.Bluetooth}</p>
+                    <p><b>Others: </b>${phone?.others?.Bluetooth || "Other features is unknown"}</p>
                 </div>
             </div>`;
 };
