@@ -51,14 +51,6 @@
     ---------------------------->
     <main class="container font-amiri">
 
-        <!----------------Display Product------------->
-        <section>
-            <div id="display product"
-                class="row row-cols-1 row-cols-md-3 row-cols-md-4 g-4 justify-content-center mb-5">
-
-            </div>
-        </section>
-
         <!----------------Spinner & Alert------------->
         <section>
             <div id="spinner" class="text-center text-amour mb-5">
@@ -70,6 +62,18 @@
                 <div class="alert alert-warning fs-5" role="alert">
                     <strong>Sorry!</strong> Your phone <span id="search-text"></span> is not available.
                 </div>
+            </div>
+        </section>
+
+        <!----------------Display Product------------->
+        <section>
+            <div id="display-product"
+                class="row row-cols-1 row-cols-md-3 row-cols-md-4 g-4 justify-content-center mb-5">
+
+            </div>
+            <div class="text-center my-5">
+                <button onClick="window.location.reload()" id="load-more" class="btn bg-imperial text-light">Load
+                    More</button>
             </div>
         </section>
 
@@ -108,6 +112,12 @@
         </section>
     </main>
 
+    <!--------------------------
+                Footer
+    ---------------------------->
+    <!-- <footer class="bg-imperial py-4 mt-5 text-center">
+        <p>&copy; Copyright Reserved by Mobile Arena</p>
+    </footer> -->
 
     <!--------------------------
                 Scripts
